@@ -1,0 +1,235 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALL	Makefile	/^ALL = main$/;"	m
+ALL	modules/Makefile	/^ALL = build_in.o$/;"	m
+ALL	utils/Makefile	/^ALL = build_in.o$/;"	m
+ALL	utils/data_base/Makefile	/^ALL = build_in.o$/;"	m
+ALL	utils/data_base/sqlite3/Makefile	/^ALL = build_in.o$/;"	m
+ALL	utils/mystr/Makefile	/^ALL = build_in.o$/;"	m
+AR	modules/Makefile	/^AR = $(CROSS_COMPILE)ar$/;"	m
+AR	utils/Makefile	/^AR = $(CROSS_COMPILE)ar$/;"	m
+AR	utils/data_base/Makefile	/^AR = $(CROSS_COMPILE)ar$/;"	m
+AR	utils/data_base/sqlite3/Makefile	/^AR = $(CROSS_COMPILE)ar$/;"	m
+AR	utils/mystr/Makefile	/^AR = $(CROSS_COMPILE)ar$/;"	m
+ARRAY_SIZE	inc/common.h	5;"	d
+CC	Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CC	modules/Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CC	utils/Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CC	utils/data_base/Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CC	utils/data_base/sqlite3/Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CC	utils/mystr/Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -g  -I$(DIR_INCLUDE)$/;"	m
+CFLAGS	modules/Makefile	/^CFLAGS= -g  -I$(DIR_INCLUDE)$/;"	m
+CFLAGS	utils/Makefile	/^CFLAGS= -g  -I$(DIR_INCLUDE)$/;"	m
+CFLAGS	utils/data_base/Makefile	/^CFLAGS= -g  -I$(DIR_INCLUDE)$/;"	m
+CFLAGS	utils/data_base/sqlite3/Makefile	/^CFLAGS= -g  -I$(DIR_INCLUDE)$/;"	m
+CFLAGS	utils/mystr/Makefile	/^CFLAGS= -g  -I$(DIR_INCLUDE)$/;"	m
+COBJS	Makefile	/^COBJS = $(patsubst %.c, %, $(CSRCS))  $/;"	m
+COBJS	modules/Makefile	/^COBJS = $(patsubst %.c, %, $(CSRCS))  $/;"	m
+COBJS	utils/Makefile	/^COBJS = $(patsubst %.c, %, $(CSRCS))  $/;"	m
+COBJS	utils/data_base/Makefile	/^COBJS = $(patsubst %.c, %, $(CSRCS))  $/;"	m
+COBJS	utils/data_base/sqlite3/Makefile	/^COBJS = $(patsubst %.c, %, $(CSRCS))  $/;"	m
+COBJS	utils/mystr/Makefile	/^COBJS = $(patsubst %.c, %, $(CSRCS))  $/;"	m
+CPP	Makefile	/^CPP = $(CROSS_COMPILE)g++$/;"	m
+CPP	modules/Makefile	/^CPP = $(CROSS_COMPILE)g++$/;"	m
+CPP	utils/Makefile	/^CPP = $(CROSS_COMPILE)g++$/;"	m
+CPP	utils/data_base/Makefile	/^CPP = $(CROSS_COMPILE)g++$/;"	m
+CPP	utils/data_base/sqlite3/Makefile	/^CPP = $(CROSS_COMPILE)g++$/;"	m
+CPP	utils/mystr/Makefile	/^CPP = $(CROSS_COMPILE)g++$/;"	m
+CPPSRCS	Makefile	/^CPPSRCS = $(wildcard *.cpp)  $/;"	m
+CPPSRCS	modules/Makefile	/^CPPSRCS = $(wildcard *.cpp)  $/;"	m
+CPPSRCS	utils/Makefile	/^CPPSRCS = $(wildcard *.cpp)  $/;"	m
+CPPSRCS	utils/data_base/Makefile	/^CPPSRCS = $(wildcard *.cpp)  $/;"	m
+CPPSRCS	utils/data_base/sqlite3/Makefile	/^CPPSRCS = $(wildcard *.cpp)  $/;"	m
+CPPSRCS	utils/mystr/Makefile	/^CPPSRCS = $(wildcard *.cpp)  $/;"	m
+CROSS_COMPILE	Makefile	/^CROSS_COMPILE =  $/;"	m
+CROSS_COMPILE	modules/Makefile	/^CROSS_COMPILE =  $/;"	m
+CROSS_COMPILE	utils/Makefile	/^CROSS_COMPILE =  $/;"	m
+CROSS_COMPILE	utils/data_base/Makefile	/^CROSS_COMPILE =  $/;"	m
+CROSS_COMPILE	utils/data_base/sqlite3/Makefile	/^CROSS_COMPILE =  $/;"	m
+CROSS_COMPILE	utils/mystr/Makefile	/^CROSS_COMPILE =  $/;"	m
+CSRCS	Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
+CSRCS	modules/Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
+CSRCS	utils/Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
+CSRCS	utils/data_base/Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
+CSRCS	utils/data_base/sqlite3/Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
+CSRCS	utils/mystr/Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
+DB_PATH	inc/common.h	8;"	d
+DIR_INCLUDE	Makefile	/^export DIR_INCLUDE=$(shell pwd)\/inc$/;"	m
+DIR_OBJ_PATH	Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o , $(SUBDIRS_))$/;"	m
+DIR_OBJ_PATH	modules/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
+DIR_OBJ_PATH	utils/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
+DIR_OBJ_PATH	utils/data_base/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
+DIR_OBJ_PATH	utils/data_base/sqlite3/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
+DIR_OBJ_PATH	utils/mystr/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
+INIT_LIST_HEAD	inc/list.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+LD	modules/Makefile	/^LD = $(CROSS_COMPILE)ld$/;"	m
+LD	utils/Makefile	/^LD = $(CROSS_COMPILE)ld$/;"	m
+LD	utils/data_base/Makefile	/^LD = $(CROSS_COMPILE)ld$/;"	m
+LD	utils/data_base/sqlite3/Makefile	/^LD = $(CROSS_COMPILE)ld$/;"	m
+LD	utils/mystr/Makefile	/^LD = $(CROSS_COMPILE)ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LDLIBS	Makefile	/^LDLIBS  = $(addprefix -l,$(LIBS))$/;"	m
+LIBS	Makefile	/^LIBS = sqlite3$/;"	m
+LIST_HEAD	inc/list.h	18;"	d
+LIST_HEAD_INIT	inc/list.h	16;"	d
+LIST_POISON1	inc/list.h	91;"	d
+LIST_POISON2	inc/list.h	92;"	d
+OBJ	Makefile	/^OBJ = $(addsuffix .o,$(COBJS)) $/;"	m
+OBJ	modules/Makefile	/^OBJ = $(addsuffix .o,$(COBJS)) $/;"	m
+OBJ	utils/Makefile	/^OBJ = $(addsuffix .o,$(COBJS)) $/;"	m
+OBJ	utils/data_base/Makefile	/^OBJ = $(addsuffix .o,$(COBJS)) $/;"	m
+OBJ	utils/data_base/sqlite3/Makefile	/^OBJ = $(addsuffix .o,$(COBJS)) $/;"	m
+OBJ	utils/mystr/Makefile	/^OBJ = $(addsuffix .o,$(COBJS)) $/;"	m
+PHONY	Makefile	/^PHONY=clean$/;"	m
+PHONY	modules/Makefile	/^PHONY=clean$/;"	m
+PHONY	utils/Makefile	/^PHONY=clean$/;"	m
+PHONY	utils/data_base/Makefile	/^PHONY=clean$/;"	m
+PHONY	utils/data_base/sqlite3/Makefile	/^PHONY=clean$/;"	m
+PHONY	utils/mystr/Makefile	/^PHONY=clean$/;"	m
+POISON_POINTER_DELTA	inc/list.h	81;"	d
+POISON_POINTER_DELTA	inc/list.h	83;"	d
+PROMPT_DEP_MSG	modules/func1.c	18;"	d	file:
+PROMPT_DEP_MSG_FORMAT	modules/func1.c	19;"	d	file:
+PROMPT_QUERY_MSG	modules/func2.c	12;"	d	file:
+PROMPT_QUERY_MSG_FORMAT	modules/func2.c	13;"	d	file:
+PROMPT_SCORE_MSG	modules/func1.c	15;"	d	file:
+PROMPT_SCORE_MSG_FORMAT	modules/func1.c	16;"	d	file:
+PROMPT_STU_MSG	modules/func1.c	11;"	d	file:
+PROMPT_STU_MSG_FORMAT	modules/func1.c	12;"	d	file:
+PWD	modules/Makefile	/^PWD:=$(shell pwd)$/;"	m
+PWD	utils/Makefile	/^PWD:=$(shell pwd)$/;"	m
+PWD	utils/data_base/Makefile	/^PWD:=$(shell pwd)$/;"	m
+PWD	utils/data_base/sqlite3/Makefile	/^PWD:=$(shell pwd)$/;"	m
+PWD	utils/mystr/Makefile	/^PWD:=$(shell pwd)$/;"	m
+SUBDIRS	Makefile	/^SUBDIRS := $(dirs)$/;"	m
+SUBDIRS	modules/Makefile	/^SUBDIRS := $(dirs)$/;"	m
+SUBDIRS	utils/Makefile	/^SUBDIRS := $(dirs)$/;"	m
+SUBDIRS	utils/data_base/Makefile	/^SUBDIRS := $(dirs)$/;"	m
+SUBDIRS	utils/data_base/sqlite3/Makefile	/^SUBDIRS := $(dirs)$/;"	m
+SUBDIRS	utils/mystr/Makefile	/^SUBDIRS := $(dirs)$/;"	m
+SUBDIRS_	Makefile	/^SUBDIRS_ := $(addsuffix \\\/ ,$(dirs))$/;"	m
+SUBDIRS_	modules/Makefile	/^SUBDIRS_ := $(addsuffix \\\/ ,$(dirs))$/;"	m
+SUBDIRS_	utils/Makefile	/^SUBDIRS_ := $(addsuffix \\\/ ,$(dirs))$/;"	m
+SUBDIRS_	utils/data_base/Makefile	/^SUBDIRS_ := $(addsuffix \\\/ ,$(dirs))$/;"	m
+SUBDIRS_	utils/data_base/sqlite3/Makefile	/^SUBDIRS_ := $(addsuffix \\\/ ,$(dirs))$/;"	m
+SUBDIRS_	utils/mystr/Makefile	/^SUBDIRS_ := $(addsuffix \\\/ ,$(dirs))$/;"	m
+_LINUX_LIST_H	inc/list.h	2;"	d
+__COMMON_H_	inc/common.h	2;"	d
+__FUCTION_H_	inc/fuction.h	2;"	d
+__SQLITE_ENCAP_H_	inc/sqlite3_encap.h	2;"	d
+__STR_H_	inc/str.h	3;"	d
+__list_add	inc/list.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_cut_position	inc/list.h	/^static inline void __list_cut_position(struct list_head *list,$/;"	f
+__list_del	inc/list.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+__list_del_entry	inc/list.h	/^static inline void __list_del_entry(struct list_head *entry)$/;"	f
+__list_for_each	inc/list.h	411;"	d
+__list_splice	inc/list.h	/^static inline void __list_splice(const struct list_head *list,$/;"	f
+age	inc/common.h	/^	short age;$/;"	m	struct:__anon1
+cmd	main.c	/^	int cmd;$/;"	m	struct:__anon3	file:
+cmd_func_t	main.c	/^typedef int (*cmd_func_t)(void);$/;"	t	file:
+cmd_group_t	main.c	/^}cmd_group_t;$/;"	t	typeref:struct:__anon3	file:
+container_of	inc/list.h	371;"	d
+dean	inc/common.h	/^	char dean[10];$/;"	m	struct:__anon2
+depid	inc/common.h	/^	short depid;$/;"	m	struct:__anon1
+dirs	Makefile	/^dirs := $(basename $(patsubst .\/%,%,$(dirs)))$/;"	m
+dirs	Makefile	/^dirs := $(filter-out $(exclude_dirs),$(dirs))$/;"	m
+dirs	Makefile	/^dirs := $(shell find . -maxdepth 1 -type d)$/;"	m
+dirs	modules/Makefile	/^dirs := $(basename $(patsubst .\/%,%,$(dirs)))$/;"	m
+dirs	modules/Makefile	/^dirs := $(filter-out $(exclude_dirs),$(dirs))$/;"	m
+dirs	modules/Makefile	/^dirs := $(shell find . -maxdepth 1 -type d)$/;"	m
+dirs	utils/Makefile	/^dirs := $(basename $(patsubst .\/%,%,$(dirs)))$/;"	m
+dirs	utils/Makefile	/^dirs := $(filter-out $(exclude_dirs),$(dirs))$/;"	m
+dirs	utils/Makefile	/^dirs := $(shell find . -maxdepth 1 -type d)$/;"	m
+dirs	utils/data_base/Makefile	/^dirs := $(basename $(patsubst .\/%,%,$(dirs)))$/;"	m
+dirs	utils/data_base/Makefile	/^dirs := $(filter-out $(exclude_dirs),$(dirs))$/;"	m
+dirs	utils/data_base/Makefile	/^dirs := $(shell find . -maxdepth 1 -type d)$/;"	m
+dirs	utils/data_base/sqlite3/Makefile	/^dirs := $(basename $(patsubst .\/%,%,$(dirs)))$/;"	m
+dirs	utils/data_base/sqlite3/Makefile	/^dirs := $(filter-out $(exclude_dirs),$(dirs))$/;"	m
+dirs	utils/data_base/sqlite3/Makefile	/^dirs := $(shell find . -maxdepth 1 -type d)$/;"	m
+dirs	utils/mystr/Makefile	/^dirs := $(basename $(patsubst .\/%,%,$(dirs)))$/;"	m
+dirs	utils/mystr/Makefile	/^dirs := $(filter-out $(exclude_dirs),$(dirs))$/;"	m
+dirs	utils/mystr/Makefile	/^dirs := $(shell find . -maxdepth 1 -type d)$/;"	m
+exclude_dirs	Makefile	/^exclude_dirs := data  doc  inc $/;"	m
+exclude_dirs	modules/Makefile	/^exclude_dirs := $/;"	m
+exclude_dirs	utils/Makefile	/^exclude_dirs := $/;"	m
+exclude_dirs	utils/data_base/Makefile	/^exclude_dirs := $/;"	m
+exclude_dirs	utils/data_base/sqlite3/Makefile	/^exclude_dirs := $/;"	m
+exclude_dirs	utils/mystr/Makefile	/^exclude_dirs := $/;"	m
+fflush_stdin	inc/common.h	6;"	d
+fun0	modules/func0.c	/^int fun0(void){$/;"	f
+fun1	modules/func1.c	/^int fun1(void){$/;"	f
+fun3	modules/func2.c	/^int fun3(void){$/;"	f
+func	main.c	/^	cmd_func_t func;$/;"	m	struct:__anon3	file:
+id	inc/common.h	/^	char id[13];$/;"	m	struct:__anon1
+id	inc/common.h	/^	short id;$/;"	m	struct:__anon2
+list	inc/common.h	/^	struct list_head list;$/;"	m	struct:__anon1	typeref:struct:__anon1::list_head
+list	inc/common.h	/^	struct list_head list;$/;"	m	struct:__anon2	typeref:struct:__anon2::list_head
+list_add	inc/list.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	inc/list.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_cut_position	inc/list.h	/^static inline void list_cut_position(struct list_head *list,$/;"	f
+list_del	inc/list.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	inc/list.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f
+list_dep_head	main.c	/^list_dep_t list_dep_head;$/;"	v
+list_dep_t	inc/common.h	/^}list_dep_t;$/;"	t	typeref:struct:__anon2
+list_empty	inc/list.h	/^static inline int list_empty(const struct list_head *head)$/;"	f
+list_empty_careful	inc/list.h	/^static inline int list_empty_careful(const struct list_head *head)$/;"	f
+list_entry	inc/list.h	381;"	d
+list_first_entry	inc/list.h	392;"	d
+list_for_each	inc/list.h	400;"	d
+list_for_each_entry	inc/list.h	449;"	d
+list_for_each_entry_continue	inc/list.h	485;"	d
+list_for_each_entry_continue_reverse	inc/list.h	499;"	d
+list_for_each_entry_from	inc/list.h	512;"	d
+list_for_each_entry_reverse	inc/list.h	460;"	d
+list_for_each_entry_safe	inc/list.h	523;"	d
+list_for_each_entry_safe_continue	inc/list.h	539;"	d
+list_for_each_entry_safe_from	inc/list.h	555;"	d
+list_for_each_entry_safe_reverse	inc/list.h	570;"	d
+list_for_each_prev	inc/list.h	419;"	d
+list_for_each_prev_safe	inc/list.h	438;"	d
+list_for_each_safe	inc/list.h	428;"	d
+list_head	inc/list.h	/^struct  list_head {$/;"	s
+list_is_last	inc/list.h	/^static inline int list_is_last(const struct list_head *list,$/;"	f
+list_is_singular	inc/list.h	/^static inline int list_is_singular(const struct list_head *head)$/;"	f
+list_move	inc/list.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	inc/list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_prepare_entry	inc/list.h	473;"	d
+list_replace	inc/list.h	/^static inline void list_replace(struct list_head *old,$/;"	f
+list_replace_init	inc/list.h	/^static inline void list_replace_init(struct list_head *old,$/;"	f
+list_rotate_left	inc/list.h	/^static inline void list_rotate_left(struct list_head *head)$/;"	f
+list_safe_reset_next	inc/list.h	588;"	d
+list_splice	inc/list.h	/^static inline void list_splice(const struct list_head *list,$/;"	f
+list_splice_init	inc/list.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+list_splice_tail	inc/list.h	/^static inline void list_splice_tail(struct list_head *list,$/;"	f
+list_splice_tail_init	inc/list.h	/^static inline void list_splice_tail_init(struct list_head *list,$/;"	f
+list_stu_head	main.c	/^list_stu_t list_stu_head;$/;"	v
+list_stu_t	inc/common.h	/^}list_stu_t;$/;"	t	typeref:struct:__anon1
+location	inc/common.h	/^	char location[50];$/;"	m	struct:__anon2
+lock	utils/data_base/sqlite3/sqlite3_encap.c	/^pthread_rwlock_t lock; $/;"	v
+main	main.c	/^int main(int argc , char ** argv){$/;"	f
+my_itoa	utils/mystr/str_process.c	/^char* my_itoa(int nval)$/;"	f
+name	inc/common.h	/^	char name[20];$/;"	m	struct:__anon1
+name	inc/common.h	/^	char name[20];$/;"	m	struct:__anon2
+next	inc/list.h	/^	struct list_head *next,*prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+offsetof	inc/list.h	359;"	d
+pes_parent_dir	modules/Makefile	/^pes_parent_dir:=$(shell basename $(PWD))$/;"	m
+pes_parent_dir	utils/Makefile	/^pes_parent_dir:=$(shell basename $(PWD))$/;"	m
+pes_parent_dir	utils/data_base/Makefile	/^pes_parent_dir:=$(shell basename $(PWD))$/;"	m
+pes_parent_dir	utils/data_base/sqlite3/Makefile	/^pes_parent_dir:=$(shell basename $(PWD))$/;"	m
+pes_parent_dir	utils/mystr/Makefile	/^pes_parent_dir:=$(shell basename $(PWD))$/;"	m
+prev	inc/list.h	/^	struct list_head *next,*prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+score	inc/common.h	/^	short score[3];$/;"	m	struct:__anon1
+sex	inc/common.h	/^	char sex;$/;"	m	struct:__anon1
+sqlite_rd_by_id	utils/data_base/sqlite3/sqlite3_encap.c	/^char * sqlite_rd_by_id(char * path,char *table,char *id ,int column,char * result ,int length){$/;"	f
+sqlite_rd_by_row_column	utils/data_base/sqlite3/sqlite3_encap.c	/^char * sqlite_rd_by_row_column(char * path,char *table,int row,int column,char * result ,int length){$/;"	f
+sqlite_rd_ifexist	utils/data_base/sqlite3/sqlite3_encap.c	/^int sqlite_rd_ifexist(char * path,char * table,char * filed ,char *value){$/;"	f
+sqlite_rd_total_row	utils/data_base/sqlite3/sqlite3_encap.c	/^char * sqlite_rd_total_row(char * path,char *table,char * result ,int length){$/;"	f
+sqlite_read_core	utils/data_base/sqlite3/sqlite3_encap.c	/^char *sqlite_read_core(char *path,char *table,char *cmd,int row,int column,char *result,int length){$/;"	f
+sqlite_wr_insert_record	utils/data_base/sqlite3/sqlite3_encap.c	/^int sqlite_wr_insert_record(char * path,char *cmd){$/;"	f
+sqlite_write_core	utils/data_base/sqlite3/sqlite3_encap.c	/^int sqlite_write_core(char *path,char *cmd){$/;"	f
+sum	inc/common.h	/^	short sum;$/;"	m	struct:__anon1
