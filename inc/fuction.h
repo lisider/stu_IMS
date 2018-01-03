@@ -2,5 +2,5 @@
 #define __FUCTION_H_
 extern int fun0(void);
 extern int fun1(void);
-extern int fun2(void);
+extern int fun3(void);
 #endif

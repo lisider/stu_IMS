@@ -122,8 +122,18 @@ int main(int argc , char ** argv){
 	cmd_group_t cmd_group[]={
 		{0,fun0},
 		{1,fun1},
-		{2,fun2},
-		//{3,fun3},
+		{2,NULL},
+		{3,fun3},
+		{4,NULL},
+		{5,NULL},
+		{6,NULL},
+		{7,NULL},
+		{8,NULL},
+		{9,NULL},
+		{10,NULL},
+		{11,NULL},
+		{12,NULL},
+		{13,NULL},
 		{-1,NULL}
 	};
 
