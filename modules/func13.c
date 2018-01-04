@@ -18,11 +18,15 @@ extern list_dep_t list_dep_head;
 
 int fun13(void){
 
-	struct list_head *pos;
+	struct list_head *pos,*pos2;
 
 	char id[13] = {0};
 
-	list_stu_t *stu_tmp_node;
+	list_stu_t *stu_tmp_node,*stu_tmp_node2;
+	list_stu_t * tmp;
+
+	tmp = (list_stu_t *)malloc(sizeof(list_stu_t));
+	memset(tmp,0,sizeof(list_stu_t));
 
 	printf("\n"DISPLAY_MSG"\n\n");
 
@@ -30,8 +34,26 @@ int fun13(void){
 
 	list_for_each(pos,&list_stu_head.list){
 		stu_tmp_node = list_entry(pos,list_stu_t,list);
-		printf("a student's name is %s\n",stu_tmp_node->name);
+
+		list_for_each(pos2,&stu_tmp_node->list){
+			stu_tmp_node2 = list_entry(pos2,list_stu_t,list);
+
+			if(stu_tmp_node->sum < stu_tmp_node2->sum || 
+					stu_tmp_node->sum == stu_tmp_node2->sum && stu_tmp_node->age < stu_tmp_node2->age){
+				memcpy(tmp,stu_tmp_node,sizeof(list_stu_t)-sizeof(struct list_head));
+				memcpy(stu_tmp_node,stu_tmp_node2,sizeof(list_stu_t)-sizeof(struct list_head));
+				memcpy(stu_tmp_node2,tmp,sizeof(list_stu_t)-sizeof(struct list_head));
+			}
+			
+		} 
 	} 
+
+
+	list_for_each(pos,&list_stu_head.list){
+		stu_tmp_node = list_entry(pos,list_stu_t,list);
+		printf("a student's name is %s, sum is %d ,age is %d\n",stu_tmp_node->name,stu_tmp_node->sum,stu_tmp_node->age);
+	} 
+
 
 	printf("\ndisplay over\n\n");
 	return 0;

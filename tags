@@ -3,7 +3,7 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_VERSION	5.6	//
 ALL	Makefile	/^ALL = main$/;"	m
 ALL	modules/Makefile	/^ALL = build_in.o$/;"	m
 ALL	utils/Makefile	/^ALL = build_in.o$/;"	m
@@ -59,14 +59,16 @@ CSRCS	utils/data_base/Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
 CSRCS	utils/data_base/sqlite3/Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
 CSRCS	utils/mystr/Makefile	/^CSRCS = $(wildcard *.c)  $/;"	m
 DB_PATH	inc/common.h	8;"	d
-DIR_INCLUDE	Makefile	/^export DIR_INCLUDE=$(shell pwd)\/inc$/;"	m
 DIR_OBJ_PATH	Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o , $(SUBDIRS_))$/;"	m
 DIR_OBJ_PATH	modules/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
 DIR_OBJ_PATH	utils/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
 DIR_OBJ_PATH	utils/data_base/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
 DIR_OBJ_PATH	utils/data_base/sqlite3/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
 DIR_OBJ_PATH	utils/mystr/Makefile	/^DIR_OBJ_PATH = $(addsuffix build_in.o,$(SUBDIRS_))$/;"	m
+DISPLAY_MSG	modules/func13.c	12;"	d	file:
+DISPLAY_MSG	modules/func2.c	12;"	d	file:
 INIT_LIST_HEAD	inc/list.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+IR_INCLUDE	Makefile	/^export DIR_INCLUDE=$(shell pwd)\/inc$/;"	m
 LD	modules/Makefile	/^LD = $(CROSS_COMPILE)ld$/;"	m
 LD	utils/Makefile	/^LD = $(CROSS_COMPILE)ld$/;"	m
 LD	utils/data_base/Makefile	/^LD = $(CROSS_COMPILE)ld$/;"	m
@@ -93,14 +95,34 @@ PHONY	utils/data_base/sqlite3/Makefile	/^PHONY=clean$/;"	m
 PHONY	utils/mystr/Makefile	/^PHONY=clean$/;"	m
 POISON_POINTER_DELTA	inc/list.h	81;"	d
 POISON_POINTER_DELTA	inc/list.h	83;"	d
+PROMPT_DEL_MSG	modules/func9.c	11;"	d	file:
+PROMPT_DEL_MSG_FORMAT	modules/func9.c	12;"	d	file:
 PROMPT_DEP_MSG	modules/func1.c	18;"	d	file:
+PROMPT_DEP_MSG	modules/func8.c	18;"	d	file:
+PROMPT_DEP_MSG	modules/func9.c	18;"	d	file:
 PROMPT_DEP_MSG_FORMAT	modules/func1.c	19;"	d	file:
-PROMPT_QUERY_MSG	modules/func2.c	12;"	d	file:
-PROMPT_QUERY_MSG_FORMAT	modules/func2.c	13;"	d	file:
+PROMPT_DEP_MSG_FORMAT	modules/func8.c	19;"	d	file:
+PROMPT_DEP_MSG_FORMAT	modules/func9.c	19;"	d	file:
+PROMPT_QUERY_MSG	modules/func3.c	12;"	d	file:
+PROMPT_QUERY_MSG	modules/func4.c	12;"	d	file:
+PROMPT_QUERY_MSG	modules/func5.c	13;"	d	file:
+PROMPT_QUERY_MSG	modules/func6.c	12;"	d	file:
+PROMPT_QUERY_MSG	modules/func7.c	12;"	d	file:
+PROMPT_QUERY_MSG_FORMAT	modules/func3.c	13;"	d	file:
+PROMPT_QUERY_MSG_FORMAT	modules/func4.c	13;"	d	file:
+PROMPT_QUERY_MSG_FORMAT	modules/func5.c	14;"	d	file:
+PROMPT_QUERY_MSG_FORMAT	modules/func6.c	13;"	d	file:
+PROMPT_QUERY_MSG_FORMAT	modules/func7.c	13;"	d	file:
 PROMPT_SCORE_MSG	modules/func1.c	15;"	d	file:
+PROMPT_SCORE_MSG	modules/func8.c	15;"	d	file:
+PROMPT_SCORE_MSG	modules/func9.c	15;"	d	file:
 PROMPT_SCORE_MSG_FORMAT	modules/func1.c	16;"	d	file:
+PROMPT_SCORE_MSG_FORMAT	modules/func8.c	16;"	d	file:
+PROMPT_SCORE_MSG_FORMAT	modules/func9.c	16;"	d	file:
 PROMPT_STU_MSG	modules/func1.c	11;"	d	file:
+PROMPT_STU_MSG	modules/func8.c	11;"	d	file:
 PROMPT_STU_MSG_FORMAT	modules/func1.c	12;"	d	file:
+PROMPT_STU_MSG_FORMAT	modules/func8.c	12;"	d	file:
 PWD	modules/Makefile	/^PWD:=$(shell pwd)$/;"	m
 PWD	utils/Makefile	/^PWD:=$(shell pwd)$/;"	m
 PWD	utils/data_base/Makefile	/^PWD:=$(shell pwd)$/;"	m
@@ -163,8 +185,17 @@ exclude_dirs	utils/mystr/Makefile	/^exclude_dirs := $/;"	m
 fflush_stdin	inc/common.h	6;"	d
 fun0	modules/func0.c	/^int fun0(void){$/;"	f
 fun1	modules/func1.c	/^int fun1(void){$/;"	f
-fun3	modules/func2.c	/^int fun3(void){$/;"	f
+fun13	modules/func13.c	/^int fun13(void){$/;"	f
+fun2	modules/func2.c	/^int fun2(void){$/;"	f
+fun3	modules/func3.c	/^int fun3(void){$/;"	f
+fun4	modules/func4.c	/^int fun4(void){$/;"	f
+fun5	modules/func5.c	/^int fun5(voname){$/;"	f
+fun6	modules/func6.c	/^int fun6(void){$/;"	f
+fun7	modules/func7.c	/^int fun7(void){$/;"	f
+fun8	modules/func8.c	/^int fun8(void){$/;"	f
+fun9	modules/func9.c	/^int fun9(void){$/;"	f
 func	main.c	/^	cmd_func_t func;$/;"	m	struct:__anon3	file:
+fuzzy_matching	utils/mystr/str_process.c	/^int fuzzy_matching(char * s1, char *s2)$/;"	f
 id	inc/common.h	/^	char id[13];$/;"	m	struct:__anon1
 id	inc/common.h	/^	short id;$/;"	m	struct:__anon2
 list	inc/common.h	/^	struct list_head list;$/;"	m	struct:__anon1	typeref:struct:__anon1::list_head
@@ -230,6 +261,7 @@ sqlite_rd_by_row_column	utils/data_base/sqlite3/sqlite3_encap.c	/^char * sqlite_
 sqlite_rd_ifexist	utils/data_base/sqlite3/sqlite3_encap.c	/^int sqlite_rd_ifexist(char * path,char * table,char * filed ,char *value){$/;"	f
 sqlite_rd_total_row	utils/data_base/sqlite3/sqlite3_encap.c	/^char * sqlite_rd_total_row(char * path,char *table,char * result ,int length){$/;"	f
 sqlite_read_core	utils/data_base/sqlite3/sqlite3_encap.c	/^char *sqlite_read_core(char *path,char *table,char *cmd,int row,int column,char *result,int length){$/;"	f
+sqlite_wr_del_record	utils/data_base/sqlite3/sqlite3_encap.c	/^int sqlite_wr_del_record(char * path,char *cmd){$/;"	f
 sqlite_wr_insert_record	utils/data_base/sqlite3/sqlite3_encap.c	/^int sqlite_wr_insert_record(char * path,char *cmd){$/;"	f
 sqlite_write_core	utils/data_base/sqlite3/sqlite3_encap.c	/^int sqlite_write_core(char *path,char *cmd){$/;"	f
 sum	inc/common.h	/^	short sum;$/;"	m	struct:__anon1
