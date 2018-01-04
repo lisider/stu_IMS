@@ -42,7 +42,11 @@ int sqlite_write_core(char *path,char *cmd){
 
 int sqlite_wr_insert_record(char * path,char *cmd){
 	return sqlite_write_core(path,cmd);
+}
 
+
+int sqlite_wr_del_record(char * path,char *cmd){
+	return sqlite_write_core(path,cmd);
 }
 
 

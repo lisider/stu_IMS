@@ -3,6 +3,7 @@
 
 //write
 extern int sqlite_wr(char * path,char *cmd);
+extern int sqlite_wr_del_record(char * path,char *cmd);
 
 //read
 extern char * sqlite_rd_by_row_column(char * path,char *table,int row,int column,char * result ,int length);

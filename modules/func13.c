@@ -11,11 +11,12 @@
 
 #define DISPLAY_MSG "going to display all registered student's info" 
 
+//按平均成绩降序对学生排序，若成绩相同，按照年龄升序排序，并在屏幕上显示排序后的学生信息。
 
 extern list_stu_t list_stu_head;
 extern list_dep_t list_dep_head;
 
-int fun2(void){
+int fun13(void){
 
 	struct list_head *pos;
 

@@ -101,6 +101,9 @@ clean:
 	rm  $(OBJ) $(ALL)  -rf
 	$(foreach i,$(SUBDIRS),$(shell make -C $(i) clean))
 
+distclean:clean
+	rm tags -f
+
 ############################################################
 
 .PHONY:$(PHONY)

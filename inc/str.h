@@ -4,4 +4,6 @@
 
 extern char* my_itoa(int nval);
 
+extern int fuzzy_matching(char * s1, char *s2);
+
 #endif

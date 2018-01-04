@@ -91,6 +91,7 @@ int main(int argc , char ** argv){
 	}
 
 	//3.读 数据库 ,写入 链表 list_dep_head
+	//
 	row_total = atoi(sqlite_rd_total_row(DB_PATH,"dep_info",tmp_str,sizeof(tmp_str)));
 	if(row_total == 0){
 		printf("there is no record in the table stu_info");
@@ -113,8 +114,8 @@ int main(int argc , char ** argv){
 				dep_tmp_node->dean,
 				dep_tmp_node->location);
 
-		list_add_tail(&(dep_tmp_node->list),&(list_stu_head.list));
-		//list_add(&(dep_tmp_node->list),&(list_stu_head.list));
+		list_add_tail(&(dep_tmp_node->list),&(list_dep_head.list));
+		//list_add(&(dep_tmp_node->list),&(list_dep_head.list));
 	}
 
 
@@ -122,18 +123,18 @@ int main(int argc , char ** argv){
 	cmd_group_t cmd_group[]={
 		{0,fun0},
 		{1,fun1},
-		{2,NULL},
+		{2,fun2},
 		{3,fun3},
-		{4,NULL},
-		{5,NULL},
-		{6,NULL},
-		{7,NULL},
-		{8,NULL},
-		{9,NULL},
-		{10,NULL},
+		{4,fun4},
+		{5,fun5},
+		{6,fun6}, //有问题,查不到 dep 中的节点
+		{7,fun7},
+		{8,fun8},
+		{9,fun9},
+		{10,fun1},
 		{11,NULL},
 		{12,NULL},
-		{13,NULL},
+		{13,fun13},
 		{-1,NULL}
 	};
 

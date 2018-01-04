@@ -9,29 +9,39 @@
 #include "common.h"
 
 
-#define DISPLAY_MSG "going to display all registered student's info" 
+#define PROMPT_QUERY_MSG "please input a student's age" 
+#define PROMPT_QUERY_MSG_FORMAT "age(int)"
 
 
 extern list_stu_t list_stu_head;
 extern list_dep_t list_dep_head;
 
-int fun2(void){
+int fun4(void){
 
 	struct list_head *pos;
 
-	char id[13] = {0};
+	int age = 0;
 
 	list_stu_t *stu_tmp_node;
 
-	printf("\n"DISPLAY_MSG"\n\n");
+	printf(PROMPT_QUERY_MSG"\n");
+	printf(PROMPT_QUERY_MSG_FORMAT"\n");
+
+	scanf("%d",&age);
+	fflush_stdin();
+	printf("%d\n",age);
 
 	//从链表中查
 
 	list_for_each(pos,&list_stu_head.list){
 		stu_tmp_node = list_entry(pos,list_stu_t,list);
-		printf("a student's name is %s\n",stu_tmp_node->name);
+		if(stu_tmp_node->age == age){
+			printf("the student's name is %s\n",stu_tmp_node->name);
+			return 0;
+		}
 	} 
 
-	printf("\ndisplay over\n\n");
+	printf("the student is not registered!!!\n");
+
 	return 0;
 }
