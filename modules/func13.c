@@ -38,8 +38,11 @@ int fun13(void){
 		list_for_each(pos2,&stu_tmp_node->list){
 			stu_tmp_node2 = list_entry(pos2,list_stu_t,list);
 
+			if(stu_tmp_node2 == &list_stu_head)
+				break;
+
 			if(stu_tmp_node->sum < stu_tmp_node2->sum || 
-					stu_tmp_node->sum == stu_tmp_node2->sum && stu_tmp_node->age < stu_tmp_node2->age){
+					stu_tmp_node->sum == stu_tmp_node2->sum && stu_tmp_node->age > stu_tmp_node2->age){
 				memcpy(tmp,stu_tmp_node,sizeof(list_stu_t)-sizeof(struct list_head));
 				memcpy(stu_tmp_node,stu_tmp_node2,sizeof(list_stu_t)-sizeof(struct list_head));
 				memcpy(stu_tmp_node2,tmp,sizeof(list_stu_t)-sizeof(struct list_head));
