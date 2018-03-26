@@ -18,7 +18,7 @@ extern list_stu_t list_stu_head;
 extern list_dep_t list_dep_head;
 
 
-int fun5(voname){
+int fun5(void){
 
 	struct list_head *pos;
 

@@ -6,7 +6,12 @@
  ************************************************************************/
 
 #include <stdio.h>
+#include <strings.h>
+#include <stdlib.h>
+#include <string.h>
+#include "sqlite3_encap.h"
 #include "common.h"
+#include "str.h"
 
 #define PROMPT_STU_MSG "please insert a student info"
 #define PROMPT_STU_MSG_FORMAT "id(text) name(text) sex(int) age(int) depid(int)"

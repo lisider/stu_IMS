@@ -8,6 +8,7 @@
 #include <sqlite3.h>
 #include <pthread.h>
 #include <string.h>
+#include <stdio.h>
 
 pthread_rwlock_t lock; 
 

@@ -10,16 +10,16 @@
 typedef struct{
 	char id[13];
 	char name[20];
-	char sex;
-	short age;
-	short score[3];
-	short sum;
-	short depid;
+	int sex;
+	int age;
+	int score[3];
+	int sum;
+	int depid;
 	struct list_head list;
 }list_stu_t;
 
 typedef struct{
-	short id;
+	int id;
 	char name[20];
 	char dean[10];
 	char location[50];

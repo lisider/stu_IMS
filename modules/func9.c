@@ -6,6 +6,10 @@
  ************************************************************************/
 
 #include <stdio.h>
+#include <strings.h>
+#include <stdlib.h>
+#include <string.h>
+#include "sqlite3_encap.h"
 #include "common.h"
 
 #define PROMPT_DEL_MSG "please insert a student's id"
